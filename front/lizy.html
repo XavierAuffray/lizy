@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins&display=swap" rel="stylesheet">  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Lizy Challenge</title>
+</head>
+<body>
+  <div class="top">
+    <h1>Find a nice restaurant for Lizy employees</h1>
+  </div>
+  <div class="container">
+    <form action="/v1/indexations" method="post" class="form form-group">
+      <div class="form form-group">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+             <label for="who">Who are you ? </label>
+          </div>
+          <select class="custom-select" id="who">
+            <option selected>Choose...</option>
+            <option value="Gilles">Gilles</option>
+            <option value="Vince">Vince</option>
+            <option value="Sam">Sam</option>
+            <option value="Klaas">Klaas</option>
+            <option value="Gaelle">Gaelle</option>
+          </select>
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+             <label for="price_range">Your budget: </label>
+          </div>
+          <select class="custom-select" id="price_range">
+            <option selected>Choose...</option>
+            <option value="$">€</option>
+            <option value="$$">€€</option>
+            <option value="$$$">€€€</option>
+            <option value="$$$$">€€€€</option>
+          </select>
+        </div>
+      </div>
+      <!-- <label for="price_range">Your budget: </label>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="price_range" value="$">
+        <label class="form-check-label" for="price_range">$</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="price_range_2" value="$$">
+        <label class="form-check-label" for="price_range_2">$$</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="price_range_3" value="$$$">
+        <label class="form-check-label" for="price_range_3">$$$</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="price_range_4" value="$$$$">
+        <label class="form-check-label" for="price_range_3">$$$$</label>
+      </div> -->
+      <div class="form form-group">
+        <label for="localisation">Your localisation: </label>
+        <input id="localisation" type="text" localisation="localisation" id="localisation" placeholder="Belvédèrestraat 29, 1050 Elsene" class="form-control" required>
+      </div>
+      <div class="form form-group">
+        <label for="max_distance">Distance max from your localisation (km): </label>
+        <input type="number" min="1" max="10" name="max_distance" id="max_distance" placeholder="1" class="form-control" required>
+      </div>
+      <div class="boutton">
+        <button type="submit" class="btn btn-primary align-middle">GO !</button>
+      </div>
+    </form>
+    <div id="answer" class="hidden">
+      <ol></ol>
+    </div>
+  </div>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
+
