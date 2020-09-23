@@ -7,7 +7,7 @@ form.addEventListener('submit', function(event) {
   const max_distance = document.getElementById('max_distance');
   const price_range = document.getElementById('price_range');
   const attendees = document.getElementById('attendees');
-  const url = 'http://localhost:4567/api_lizy'
+  const url = ' https://lizyapi.herokuapp.com/api_lizy'
   const object = {
     who: `${who.value}`,
     localisation: `${localisation.value}`,

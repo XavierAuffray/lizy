@@ -43,10 +43,10 @@ class Calculator
   private
 
   def be_sure_to_get_10_results(result, response)
-    z = -1
+    z = 0
     while result.size < 10
       result << JSON.parse(response.read_body)['data'][z]
-      z -= 1
+      z += 1
     end
   end
 
