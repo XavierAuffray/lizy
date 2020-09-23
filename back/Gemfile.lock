@@ -1,0 +1,42 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    geocoder (1.6.3)
+    json (2.3.1)
+    mustermann (1.1.1)
+      ruby2_keywords (~> 0.0.1)
+    openssl (2.2.0)
+    rack (2.2.3)
+    rack-protection (2.1.0)
+      rack
+    ruby2_keywords (0.0.2)
+    rubysl-cgi (2.0.1)
+    rubysl-erb (2.0.2)
+    rubysl-net-http (2.0.4)
+      rubysl-cgi (~> 2.0)
+      rubysl-erb (~> 2.0)
+      rubysl-singleton (~> 2.0)
+    rubysl-singleton (2.0.0)
+    sinatra (2.1.0)
+      mustermann (~> 1.0)
+      rack (~> 2.2)
+      rack-protection (= 2.1.0)
+      tilt (~> 2.0)
+    sinatra-cross_origin (0.4.0)
+    tilt (2.0.10)
+    uri (0.10.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  geocoder
+  json
+  openssl (~> 2.2)
+  rubysl-net-http (~> 2.0, >= 2.0.4)
+  sinatra
+  sinatra-cross_origin (~> 0.4.0)
+  uri
+
+BUNDLED WITH
+   2.1.4

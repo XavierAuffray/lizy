@@ -61,11 +61,11 @@ class Calculator
   end
 
   def restaurant_has_a_name?(restaurant)
-    !restaurant['name'].nil?
+    !restaurant['name'].nil? || !restaurant['name'] == ''
   end
 
   def restaurant_has_a_price_level?(restaurant)
-    !restaurant['price_level'].nil?
+    !restaurant['price_level'].nil? || !restaurant['price_level'] == ''
   end
 
   def check_price_level?(restaurant)
